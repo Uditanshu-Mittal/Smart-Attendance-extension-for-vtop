@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Attendance Bunk Planner",
+    "version": "1.0",
+    "description": "Injects a custom smart attenda  column.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://vtop.vit.ac.in/vtop/content"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
